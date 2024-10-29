@@ -1,0 +1,91 @@
+.form {
+    background-color: rgb(17, 17, 82);
+    padding: 5rem 0;
+    border-radius: 1rem;
+
+    &__top {
+        margin-bottom: 5rem;
+        padding: 0 10rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 3rem;
+        text-align: center;
+        color: rgba(#ffffff, 0.8);
+        font-size: 1.8rem;
+    }
+
+    &__input {
+        display: block;
+        height: 6rem;
+        border: none;
+        width: 100%;
+        // padding: 0 2rem;
+        font-size: 1.6rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &[type=file] {
+            color: #fff;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    &__agree {
+        font-size: 1.6rem;
+        color: #fff;
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        span {
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: underline;
+            color: rgb(0, 162, 255);
+        }
+    }
+
+    &__bottom {
+        padding: 0 10rem;
+        padding-top: 5rem;
+        border-top: 1px solid #fff;
+    }
+
+    &__row {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__soc {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    &__or {
+        font-weight: 300;
+        max-width: 25rem;
+        margin-bottom: 2rem;
+    }
+}
