@@ -1,8 +1,11 @@
 html {
     font-size: calc(100vw / 192);
     font-family: "Montserrat"
+}
 
-
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 1920px) {

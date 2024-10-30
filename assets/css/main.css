@@ -3,6 +3,11 @@ html {
   font-family: "Montserrat";
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1920px) {
   html {
     font-size: 10px;
