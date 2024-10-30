@@ -1,11 +1,11 @@
 .form {
-    background-color: rgb(17, 17, 82);
+    background-color: rgb(3, 3, 59);
     padding: 5rem 0;
     border-radius: 1rem;
 
     &__top {
         margin-bottom: 5rem;
-        padding: 0 10rem;
+        padding: 0 5rem;
     }
 
     &__title {
@@ -63,7 +63,7 @@
     }
 
     &__bottom {
-        padding: 0 10rem;
+        padding: 0 5rem;
         padding-top: 5rem;
         border-top: 1px solid #fff;
     }
