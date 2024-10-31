@@ -4,8 +4,16 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
     &__title {
         margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -19,12 +27,30 @@
     gap: 5rem;
     align-items: center;
 
+    @media (max-width: 768px) {
+        padding: 20px;
+        border-radius: 10px;
+        gap: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     &:not(:last-child) {
         margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__capture {
         margin-bottom: 6rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__img {
@@ -33,9 +59,22 @@
 
         overflow: hidden;
 
+        @media (max-width: 768px) {
+            border-radius: 10px;
+            height: auto;
+            width: 100%;
+            display: block;
+        }
+
         img {
             height: 100%;
             width: 100%;
+
+            @media (max-width: 768px) {
+                height: auto;
+                width: 100%;
+                display: block;
+            }
         }
     }
 
@@ -46,8 +85,17 @@
         position: relative;
         font-size: 2.4rem;
 
+        @media (max-width: 768px) {
+            font-size: 18px;
+            gap: 10px;
+        }
+
         &:not(:last-child) {
             margin-bottom: 6rem;
+
+            @media (max-width: 768px) {
+                margin-bottom: 20px;
+            }
         }
 
         &::before {
@@ -60,6 +108,11 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+
+            @media (max-width: 768px) {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

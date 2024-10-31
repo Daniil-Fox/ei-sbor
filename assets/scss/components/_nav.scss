@@ -9,5 +9,9 @@
     font-size: 2rem;
     color: #fff;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 }

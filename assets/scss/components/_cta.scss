@@ -4,14 +4,26 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
     &__container {
         display: flex;
         gap: 9rem;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__subtitle {
         font-size: 2.4rem;
         max-width: 80%;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     &__left {
@@ -22,6 +34,10 @@
 
     &__title {
         margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 
 
@@ -32,14 +48,27 @@
     align-items: center;
     gap: 3rem;
 
+    @media (max-width: 768px) {
+        gap: 20px;
+    }
+
     &:not(:last-child) {
         margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__icon {
         width: 20rem;
         height: 20rem;
         flex-shrink: 0;
+
+        @media (max-width: 768px) {
+            width: 80px;
+            height: 80px;
+        }
 
         img {
             width: 100%;
@@ -60,5 +89,10 @@
         justify-content: center;
         width: 14rem;
         height: 14rem;
+
+        @media (max-width: 768px) {
+            width: 80px;
+            height: 80px;
+        }
     }
 }

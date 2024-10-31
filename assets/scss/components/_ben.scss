@@ -4,15 +4,28 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
     &__title {
         text-transform: uppercase;
         margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
     }
 
     &__item {
@@ -21,12 +34,22 @@
         gap: 2rem;
         padding: 6rem;
         background-color: rgb(243, 249, 255);
+
+        @media (max-width: 768px) {
+            padding: 20px;
+            gap: 20px;
+        }
     }
 
     &__icon {
         flex-shrink: 0;
         width: 12rem;
         height: 12rem;
+
+        @media (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+        }
 
         img {
             width: 100%;
@@ -37,6 +60,10 @@
 
     &__text {
         font-size: 2.8rem;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
 
         span {
             font-weight: 700;
